@@ -27,3 +27,5 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d0a5a1a-2a09-472b-aa17-aa0b4bd506b9/deploy-status)](https://app.netlify.com/projects/zervinekitchen/deploys)

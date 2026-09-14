@@ -3,8 +3,10 @@
 // injeksi env VITE_*, alias path "@", dedupe React/TanStack, error logger plugins, dll.
 // JANGAN tambahkan plugin-plugin itu lagi secara manual di sini, nanti duplikat & error.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import netlify from "@netlify/vite-plugin-tanstack-start";
 
 export default defineConfig({
+  plugins: [netlify()],
   tanstackStart: {
     server: { entry: "server" },
   },
