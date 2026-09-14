@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "build:netlify": "npm run build && node -e \"const fs=require('fs'); fs.rmSync('dist/client',{recursive:true,force:true}); fs.mkdirSync('dist/client',{recursive:true}); fs.cpSync('.output/public','dist/client',{recursive:true});\"",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
