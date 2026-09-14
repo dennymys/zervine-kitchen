@@ -2,3 +2,6 @@
   command = "npm run build:netlify"
   publish = "dist/client"
   functions = ".netlify/v1/functions"
+
+[build.environment]
+  NODE_VERSION = "24.21.0"
