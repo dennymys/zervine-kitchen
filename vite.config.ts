@@ -8,4 +8,9 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  // This project deploys to Netlify, not Cloudflare (the wrapper's default
+  // target), so the server bundle preset must be pinned explicitly.
+  nitro: {
+    preset: "netlify",
+  },
 });
